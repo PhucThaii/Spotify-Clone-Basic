@@ -23,3 +23,20 @@ Một ứng dụng web clone cơ bản của Spotify, được xây dựng với
 - [x] Lưu bài hát yêu thích
 
 ---
+⚙️ Hướng dẫn chạy dự án
+1. Backend (Django)
+
+  cd backend
+  python -m venv venv
+  source venv/bin/activate  
+  # Windows: venv\Scripts\activate
+  pip install -r requirements.txt
+  python manage.py migrate
+  python manage.py runserver
+  
+2. Frontend (React)
+  cd frontend
+  npm install
+  npm start
+
+Frontend sẽ chạy ở http://localhost:3000, backend ở http://127.0.0.1:8000
