@@ -10,7 +10,7 @@ export default function GenreList(props: IGenreListProps) {
   const navigate = useNavigate();
   return (
     <div>
-      <div className='text-7xl text-white font-bold mb-5'>Genres</div>
+      <div className='text-7xl text-white font-bold mb-5'>Thể loại</div>
       <div className='flex gap-6 flex-wrap'>
         {props.genres.map((genre) => {
           return (

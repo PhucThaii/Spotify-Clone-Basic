@@ -23,7 +23,7 @@ export default function Profile(props: IProfileProps) {
 
   React.useEffect(() => {
     // set profile details and profile image
-    getProfile().then(res => {
+      getProfile().then(res => {
       setProfile(res.data)
       setProfilePhoto(res.data.image)
     })
@@ -42,9 +42,9 @@ export default function Profile(props: IProfileProps) {
       <div className='flex gap-10 mb-10'>
         <ProfilePhoto image={profilePhoto} editable={isThisUser} edit={() => setOpen(true)} />
         <div className='flex flex-col justify-end text-white '>
-          <div>Profile</div>
+          <div>Hồ sơ</div>
           <div className='mb-9 mt-2 text-8xl font-bold'>{profile.first_name} {profile.last_name}</div>
-          <div>{profile.playlists.length} playlists</div>
+          <div>{profile.playlists.length} Danh sách phát</div>
         </div>
       </div>
       <div>

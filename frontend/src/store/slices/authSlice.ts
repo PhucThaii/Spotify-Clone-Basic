@@ -73,7 +73,7 @@ export const checkAuthAction = () => (dispatch: Dispatch) => {
 export const loginAction = (data: loginParams) => (dispatch: Dispatch) => {
     login(data).then(response => {
         dispatch(setAuthInfo(response.data))
-        dispatch(setToast({ open: true, type: 'success', message: 'Ugurla giris edildi!' }))
+        dispatch(setToast({ open: true, type: 'success', message: 'Đăng nhập thành công' }))
         dispatch(setAuthStatus('loggedIn'))
         if (data.remember_me) {
             localStorage.setItem('authInfo', JSON.stringify(response.data))
@@ -87,7 +87,7 @@ export const loginAction = (data: loginParams) => (dispatch: Dispatch) => {
 export const registerAction = (data: IRegisterParams) => (dispatch: Dispatch) => {
     register(data).then(response => {
         dispatch(setAuthInfo(response.data))
-        dispatch(setToast({ open: true, type: 'success', message: 'Ugurla qeydiyyatdan kecdiniz!' }))
+        dispatch(setToast({ open: true, type: 'success', message: 'Đăng kí thành công' }))
         dispatch(setAuthStatus('loggedIn'))
         setTokenToAxios(response.data.token)
     }).catch(error => {

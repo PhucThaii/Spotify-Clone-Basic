@@ -40,7 +40,7 @@ export default function Register(props: IRegisterProps) {
           <div className='mt-5 text-2xl text-white'>
             <FormControlLabel
               control={<Checkbox value={rememberMe} onChange={e => setRememberMe(e.target.checked)} />}
-              label="Remember Me"
+              label="Lưu đăng nhập"
               labelPlacement="end"
             />
           </div>

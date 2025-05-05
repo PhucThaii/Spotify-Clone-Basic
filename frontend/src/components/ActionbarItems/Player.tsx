@@ -91,7 +91,7 @@ export default function Player(props: IPlayerProps) {
    // play or pause audio when space key is pressed and change audio current time when left or right arrow key is pressed
    React.useEffect(() => {
       const keyPressPlayerControl = (e: KeyboardEvent) => {
-         if (e.code === 'Space') {
+         if (e.code === 'Pause') {
             playHandler()
          } 
          else if (e.code === 'ArrowLeft') {
