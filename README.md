@@ -8,7 +8,6 @@ Một ứng dụng web clone cơ bản của Spotify, được xây dựng với
 - **Backend**: Django, Django REST Framework (DRF)
 - **Database**: PostgreSQL 
 - **Authentication**: Django JWT (hoặc có thể tích hợp OAuth2)
-- **Streaming**: Audio HTML5 (hiện tại chạy demo từ URL tĩnh)
 
 ---
 
