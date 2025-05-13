@@ -40,6 +40,7 @@ Một ứng dụng web clone cơ bản của Spotify, được xây dựng với
   python manage.py runserver
   
 2. Frontend (React)
+
   cd frontend
 
   npm install
